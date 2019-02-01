@@ -1,0 +1,9 @@
+<templateSet group="MyAndroidTemplates">
+  <template name="bindvm" value="@Binds&#10;@IntoMap&#10;@ViewModelKey($TYPE$::class)&#10;abstract fun bind$TYPE$($VAR$: $TYPE$): ViewModel" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="decapitalize(TYPE)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+</templateSet>
