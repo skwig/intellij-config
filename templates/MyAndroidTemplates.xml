@@ -6,4 +6,32 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
+  <template name="provvm" value="$VAR$ = ViewModelProviders.of(this, $FACTORY$).get($TYPE$::class.java)" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="kotlinVariable()" defaultValue="" alwaysStopAt="true" />
+    <variable name="FACTORY" expression="kotlinVariable()" defaultValue="viewModelFactory" alwaysStopAt="false" />
+    <variable name="TYPE" expression="typeOfVariable(VAR)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="module" value="import dagger.Module&#10;&#10;@Module&#10;class $CLASSNAME$ {&#10;    $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASSNAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="contribfrag" value="@ContributesAndroidInjector&#10;abstract fun contribute$TYPE_COPY$(): $TYPE$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE_COPY" expression="TYPE" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="simplemodule" value="import androidx.lifecycle.ViewModel&#10;import dagger.Binds&#10;import dagger.Module&#10;import dagger.android.ContributesAndroidInjector&#10;import dagger.multibindings.IntoMap&#10;&#10;@Module(includes = [$INPUT$ViewModelModule::class, $INPUT$FragmentModule::class])&#10;class $INPUT$Module{&#10;&#10;}&#10;&#10;@Module&#10;abstract class $INPUT$ViewModelModule {&#10;    @Binds&#10;    @IntoMap&#10;    @ViewModelKey($INPUT$ViewModel::class)&#10;    abstract fun bind$INPUT$ViewModel($INPUT_DECAPITALIZED$ViewModel: $INPUT$ViewModel): ViewModel&#10;}&#10;&#10;@Module&#10;abstract class $INPUT$FragmentModule {&#10;&#10;    @ContributesAndroidInjector&#10;    abstract fun contribute$INPUT$Fragment(): $INPUT$Fragment&#10;&#10;}" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="INPUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INPUT_DECAPITALIZED" expression="decapitalize(INPUT)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
 </templateSet>
