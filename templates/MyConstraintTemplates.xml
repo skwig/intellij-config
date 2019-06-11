@@ -1,5 +1,5 @@
 <templateSet group="MyConstraintTemplates">
-  <template name="tt" value="app:layout_constraintTop_toTopOf=&quot;@+id/$ID$&quot;" toReformat="true" toShortenFQNames="true">
+  <template name="tt" value="app:layout_constraintTop_toTopOf=&quot;@id/$ID$&quot;" toReformat="true" toShortenFQNames="true">
     <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
@@ -10,13 +10,13 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="tb" value="app:layout_constraintTop_toBottomOf=&quot;@+id/$ID$&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="tb" value="app:layout_constraintTop_toBottomOf=&quot;@id/$ID$&quot;" toReformat="false" toShortenFQNames="true">
     <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="bb" value="app:layout_constraintBottom_toBottomOf=&quot;@+id/$ID$&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="bb" value="app:layout_constraintBottom_toBottomOf=&quot;@id/$ID$&quot;" toReformat="false" toShortenFQNames="true">
     <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
@@ -27,13 +27,13 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="bt" value="app:layout_constraintBottom_toTopOf=&quot;@+id/$ID$&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="bt" value="app:layout_constraintBottom_toTopOf=&quot;@id/$ID$&quot;" toReformat="false" toShortenFQNames="true">
     <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="ss" value="app:layout_constraintStart_toStartOf=&quot;@+id/$ID$&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="ss" value="app:layout_constraintStart_toStartOf=&quot;@id/$ID$&quot;" toReformat="false" toShortenFQNames="true">
     <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
@@ -44,13 +44,13 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="se" value="app:layout_constraintStart_toEndOf=&quot;@+id/$ID$&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="se" value="app:layout_constraintStart_toEndOf=&quot;@id/$ID$&quot;" toReformat="false" toShortenFQNames="true">
     <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="ee" value="app:layout_constraintEnd_toEndOf=&quot;@+id/$ID$&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="ee" value="app:layout_constraintEnd_toEndOf=&quot;@id/$ID$&quot;" toReformat="false" toShortenFQNames="true">
     <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
@@ -61,7 +61,7 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="es" value="app:layout_constraintEnd_toStartOf=&quot;@+id/$ID$&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="es" value="app:layout_constraintEnd_toStartOf=&quot;@id/$ID$&quot;" toReformat="false" toShortenFQNames="true">
     <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />

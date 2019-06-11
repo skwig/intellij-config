@@ -34,4 +34,21 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
+  <template name="debugobs" value=".doOnNext { Log.d(&quot;matej&quot;, &quot;$NAME$.doOnNext next = [$it]&quot;) }&#10;.doOnComplete { Log.d(&quot;matej&quot;, &quot;$NAME$.doOnComplete&quot;) }&#10;.doOnError { Log.d(&quot;matej&quot;, &quot;$NAME$.doOnError throwable = [$it]&quot;) }&#10;.doOnSubscribe { Log.d(&quot;matej&quot;, &quot;$NAME$.doOnSubscribe disposable = [$it]&quot;) }&#10;.doOnDispose { Log.d(&quot;matej&quot;, &quot;$NAME$.doOnDispose&quot;) }" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="subblank" value=".subscribe({},Timber::e)" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="simpleprovide" value="@Provides&#10;@Singleton&#10;fun provide$TYPE$(): $TYPE$ = $END$" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
 </templateSet>
